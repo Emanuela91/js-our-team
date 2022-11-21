@@ -44,12 +44,12 @@ for (let i = 0; i < membriTeam.length; i++){
     console.log(Team);
     // MILESTONE 2:
     // Stampare le stesse informazioni su DOM sottoforma di stringhe.
-    for(let chiave in Team){
-        console.log(chiave, Team[chiave]);
         let contenitore = document.getElementById('cards');
-        contenitore.append(`${chiave + ' '}: ${Team[chiave]}`);
-    }
+        let card = document.createElement("div");
+        card.innerHTML = `${Team.nome} ${Team.role} ${Team.foto}`;
+        contenitore.append(card);
 }
+
 
 
 
