@@ -47,17 +47,18 @@ for (let i = 0; i < membriTeam.length; i++){
         let contenitore = document.getElementById('cards');
         let card = document.createElement("div");
         card.innerHTML = `${Team.nome} ${Team.role} ${Team.foto}`;
-        contenitore.append(card);
-}
-
-
-
-
-
+        contenitore.append(card);       
+        
+    }
+    
 
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
+
+
+
+
 // BONUS 2:
 // Organizzare i singoli membri in card/schede.
 

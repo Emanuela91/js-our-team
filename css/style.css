@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.container{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: darkorange;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container p{
+    text-align: center;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+}
