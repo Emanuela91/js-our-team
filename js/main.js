@@ -7,32 +7,32 @@ const membriTeam = [
     {
         "nome" : "Wayne Barnett",
         "role" : "Founder e CEO",
-        "foto" : "wayne-barnett-founder-ceo.jpg"
+        "foto" : "img/wayne-barnett-founder-ceo.jpg"
     },
     {
         "nome" : "Agela Caroll",
         "role" : "Chief Editor",
-        "foto" : "angela-caroll-chief-editor.jpg" 
+        "foto" : "img/angela-caroll-chief-editor.jpg" 
     },
     {
         "nome" : "Walter Gordon",
         "role" : "Office Manager",
-        "foto" : "walter-gordon-office-manager.jpg"
+        "foto" : "img/walter-gordon-office-manager.jpg"
     },
     {
         "nome" : "Angela Lopez",
         "role" : "Social Media Manager",
-        "foto" : "angela-lopez-social-media-manager.jpg"
+        "foto" : "img/angela-lopez-social-media-manager.jpg"
     },
     {
         "nome" : "Scott Estrada",
         "role" : "Developer",
-        "foto" : "scott-estrada-developer.jpg"
+        "foto" : "img/scott-estrada-developer.jpg"
     },
     {
         "nome" : "Barbara Ramos",
         "role" : "Graphic Designer",
-        "foto" : "barbara-ramos-graphic-designer.jpg"
+        "foto" : "img/barbara-ramos-graphic-designer.jpg"
     }
 ];
 
@@ -42,11 +42,17 @@ const membriTeam = [
 for (let i = 0; i < membriTeam.length; i++){
     let Team = membriTeam[i];
     console.log(Team);
+    // MILESTONE 2:
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe.
+    for(let chiave in Team){
+        console.log(chiave, Team[chiave]);
+        let contenitore = document.getElementById('cards');
+        contenitore.append(`${chiave + ' '}: ${Team[chiave]}`);
+    }
 }
 
 
-// MILESTONE 2:
-// Stampare le stesse informazioni su DOM sottoforma di stringhe.
+
 
 
 
