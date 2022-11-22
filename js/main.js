@@ -45,19 +45,20 @@ for (let i = 0; i < membriTeam.length; i++){
     console.log(Team);
     // MILESTONE 2:
     // Stampare le stesse informazioni su DOM sottoforma di stringhe.
-    let card = document.createElement("div");
+    // let card = document.createElement("div");    
+    // card.innerHTML = `${Team.nome} ${Team.role} ${Team.foto}`;
+    // contenitore.append(card); 
+     
+    
     // BONUS 1:
     // Trasformare la stringa foto in una immagine effettiva
+    let card = document.createElement("div");    
     let img = document.createElement("img");
     img.src = Team.foto; 
-    card.innerHTML = `${Team.nome} ${Team.role} ${Team.foto}`;
+    card.innerHTML = `${Team.nome} ${Team.role}`;
     contenitore.append(card); 
-    card.append(img);              
+    card.append(img);           
 }
-    
-
-
-
 
 
 
